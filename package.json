@@ -3,25 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "gen": "tsx ./generateTestPage.ts"
   },
   "dependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.5.2"
+    "@fxts/core": "1.15.0",
+    "nanoid": "5.1.5",
+    "next": "12.1.5",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@kurly/prettier-config": "0.0.0",
     "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "17.0.3",
+    "@types/react-dom": "17.0.25",
+    "ora": "8.2.0",
+    "prettier": "3.6.2",
     "tailwindcss": "^4",
-    "eslint": "^9",
-    "eslint-config-next": "15.5.2",
-    "@eslint/eslintrc": "^3"
-  }
+    "tsx": "4.20.5",
+    "typescript": "^5"
+  },
+  "prettier": "@kurly/prettier-config"
 }
